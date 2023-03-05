@@ -49,7 +49,7 @@ BrowserDictionaryLoader.prototype.loadArrayBuffer = function (url, callback) {
 
         // var gz = new zlib.Zlib.Gunzip(new Uint8Array(arraybuffer));
         // var typed_array = gz.decompress();
-        callback(null, typed_array.buffer);
+        callback(null, arraybuffer);
     };
     xhr.onerror = function (err) {
         callback(err, null);
